@@ -1,8 +1,10 @@
 import { Instruccion } from '../Abstract/Instruccion';
 import Errores from '../Exceptions/Error';
 import tablaSimbolo from './SymbolTable';
-// import { CDigraph, CNode, CEdge} from '../../../Graphviz'
-//import { toDot } from 'ts-graphviz';
+import { CDigraph, CNode, CEdge} from '../../../Graphviz'
+import { toDot } from 'ts-graphviz';
+import * as fs from 'fs';
+import { spawnSync } from 'child_process';
 
 export default class Three {
   private instrucciones: Array<Instruccion>;
@@ -13,7 +15,7 @@ export default class Three {
   private raiz: Nodo;
   private graphIndex: number;
   constructor(production: any) {
-    this.instrucciones = production.returnInstruction;
+    this.instrucciones = production.retorno;
     this.consola = '';
     this.tablaGlobal = new tablaSimbolo();
     this.errores = new Array<Errores>();
@@ -57,31 +59,39 @@ export default class Three {
   public getRaiz() {
     return this.raiz;
   }
-  // public buildTree(padre: Nodo, nodoPadre: CNode, digraph: CDigraph){
-  //   const nodos = padre.getHijos()
-  //   for(let i=0; i<nodos.length; i++){
-  //       const nodo = nodos[i];
-  //       const node = new CNode(this.graphIndex++, nodo.getValor());
+  public buildTree(padre: Nodo, nodoPadre: CNode, digraph: CDigraph){
+    const nodos = padre.getHijos()
+    for(let i=0; i<nodos.length; i++){
+        const nodo = nodos[i];
+        const node = new CNode(this.graphIndex++, nodo.getValor());
        
-  //       digraph.addNode(node);
-  //       const edge = new CEdge([nodoPadre, node], "");
-  //       digraph.addEdge(edge);
+        digraph.addNode(node);
+        const edge = new CEdge([nodoPadre, node], "");
+        digraph.addEdge(edge);
 
-  //       this.buildTree(nodo, node, digraph)
-  //   }
-  // }
+        this.buildTree(nodo, node, digraph)
+    }
+  }
 
-  // public getTree(name: string){
-  //     const digraph = new CDigraph(name);
-  //     const actual = this.raiz;
+  public getTree(name: string){
+      const digraph = new CDigraph(name);
+      const actual = this.raiz;
 
-  //     const node = new CNode(this.graphIndex++, actual.getValor());
-  //     digraph.addNode(node);
+      const node = new CNode(this.graphIndex++, actual.getValor());
+      digraph.addNode(node);
 
-  //     this.buildTree(actual, node, digraph);
-  //     this.graphIndex = 0;
-  //     return toDot(digraph)
-  // }
+      this.buildTree(actual, node, digraph);
+      this.graphIndex = 0;
+      const dot = toDot(digraph);
+      
+      fs.writeFileSync('AST.dot', dot, 'utf8');
+      // Generar el archivo PNG utilizando Graphviz
+      spawnSync('dot', ['-Tpng', 'AST.dot', '-o', 'AST.png']);
+
+console.log('Archivo PNG generado: grafo.png');
+
+      return toDot(digraph)
+  }
 
 }
 

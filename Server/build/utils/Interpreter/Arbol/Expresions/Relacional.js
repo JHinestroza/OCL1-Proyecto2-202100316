@@ -40,8 +40,31 @@ class Relacional extends Instruccion_1.Instruccion {
         if (validTypesOperations.includes(this.operacionIzq.tipoDato.getTipo())
             && validTypesOperations.includes(this.operacionDer.tipoDato.getTipo())) {
             if (this.tipo === tipoOp.MAYOR) {
+                console.log("entre en mayor " + valueIzq + "  " + valueDer);
                 this.tipoDato = new Type_1.default(Type_1.DataType.BOOLEAN);
                 return valueIzq > valueDer;
+            }
+            else if (this.tipo === tipoOp.MENOR) {
+                this.tipoDato = new Type_1.default(Type_1.DataType.BOOLEAN);
+                console.log("entre en menor " + valueIzq + "  " + valueDer);
+                return valueIzq < valueDer;
+            }
+            else if (this.tipo === tipoOp.MENOR_IGUAL) {
+                this.tipoDato = new Type_1.default(Type_1.DataType.BOOLEAN);
+                console.log("entre en menor o igual" + valueIzq + "  " + valueDer);
+                return valueIzq <= valueDer;
+            }
+            else if (this.tipo === tipoOp.MAYOR_IGUAL) {
+                this.tipoDato = new Type_1.default(Type_1.DataType.BOOLEAN);
+                return valueIzq >= valueDer;
+            }
+            else if (this.tipo === tipoOp.IGUAL) {
+                this.tipoDato = new Type_1.default(Type_1.DataType.BOOLEAN);
+                return valueIzq = valueDer;
+            }
+            else if (this.tipo === tipoOp.DIFERENTE) {
+                this.tipoDato = new Type_1.default(Type_1.DataType.BOOLEAN);
+                return valueIzq != valueDer;
             }
         }
         else {
@@ -56,4 +79,6 @@ var tipoOp;
     tipoOp[tipoOp["MENOR"] = 1] = "MENOR";
     tipoOp[tipoOp["MAYOR_IGUAL"] = 2] = "MAYOR_IGUAL";
     tipoOp[tipoOp["MENOR_IGUAL"] = 3] = "MENOR_IGUAL";
+    tipoOp[tipoOp["IGUAL"] = 4] = "IGUAL";
+    tipoOp[tipoOp["DIFERENTE"] = 5] = "DIFERENTE";
 })(tipoOp || (exports.tipoOp = tipoOp = {}));

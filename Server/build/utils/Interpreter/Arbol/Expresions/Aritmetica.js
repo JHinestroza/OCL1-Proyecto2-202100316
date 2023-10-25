@@ -34,28 +34,26 @@ class Aritmetico extends Instruccion_1.Instruccion {
         this.operacionDer = opDer;
     }
     interpretar(arbol, tabla) {
-        if (this.tipo === tipoOp.SUMA) {
+        if (this.tipo == tipoOp.SUMA) {
             let valueIzq = this.operacionIzq.interpretar(arbol, tabla);
             let valueDer = this.operacionDer.interpretar(arbol, tabla);
-            console.log("este es el valor izquierdo" + valueIzq);
-            console.log("este es el valor derecho" + valueDer);
-            if (this.operacionIzq.tipoDato.getTipo() === Type_1.DataType.DECIMAL) {
-                if (this.operacionDer.tipoDato.getTipo() === Type_1.DataType.DECIMAL) {
+            if (this.operacionIzq.tipoDato.getTipo() == Type_1.DataType.DECIMAL) {
+                if (this.operacionDer.tipoDato.getTipo() == Type_1.DataType.DECIMAL) {
                     this.tipoDato.setTipo(Type_1.DataType.DECIMAL);
                     console.log((valueIzq) + (valueDer));
                     return (Number(valueIzq) + Number(valueDer));
                 }
-                else if (this.operacionDer.tipoDato.getTipo() === Type_1.DataType.CADENA) {
+                else if (this.operacionDer.tipoDato.getTipo() == Type_1.DataType.CADENA) {
                     this.tipoDato.setTipo(Type_1.DataType.CADENA);
-                    return (`${valueIzq.toString()} ${valueDer.toString()}`);
+                    return (`${valueIzq.toString()} + ${valueDer.toString()}`);
                 }
             }
-            if (this.operacionIzq.tipoDato.getTipo() === Type_1.DataType.CADENA) {
-                if (this.operacionDer.tipoDato.getTipo() === Type_1.DataType.DECIMAL) {
+            if (this.operacionIzq.tipoDato.getTipo() == Type_1.DataType.CADENA) {
+                if (this.operacionDer.tipoDato.getTipo() == Type_1.DataType.DECIMAL) {
                     this.tipoDato.setTipo(Type_1.DataType.DECIMAL);
                     return (`${valueIzq.toString()} ${valueDer.toString()}`);
                 }
-                else if (this.operacionDer.tipoDato.getTipo() === Type_1.DataType.CADENA) {
+                else if (this.operacionDer.tipoDato.getTipo() == Type_1.DataType.CADENA) {
                     this.tipoDato.setTipo(Type_1.DataType.CADENA);
                     return (`${valueIzq.toString()} ${valueDer.toString()}`);
                 }
@@ -64,6 +62,8 @@ class Aritmetico extends Instruccion_1.Instruccion {
         else if (this.tipo === tipoOp.RESTA) {
             let valueIzq = this.operacionIzq.interpretar(arbol, tabla);
             let valueDer = this.operacionDer.interpretar(arbol, tabla);
+            console.log("este es el valor izquierdo" + valueIzq);
+            console.log("este es el valor derecho" + valueDer);
             if (this.operacionIzq.tipoDato.getTipo() === Type_1.DataType.DECIMAL) {
                 if (this.operacionDer.tipoDato.getTipo() === Type_1.DataType.DECIMAL) {
                     this.tipoDato.setTipo(Type_1.DataType.DECIMAL);
@@ -91,6 +91,16 @@ class Aritmetico extends Instruccion_1.Instruccion {
                 }
             }
         }
+        else if (this.tipo === tipoOp.MOD) {
+            let valueIzq = this.operacionIzq.interpretar(arbol, tabla);
+            let valueDer = this.operacionDer.interpretar(arbol, tabla);
+            if (this.operacionIzq.tipoDato.getTipo() === Type_1.DataType.DECIMAL) {
+                if (this.operacionDer.tipoDato.getTipo() === Type_1.DataType.DECIMAL) {
+                    this.tipoDato.setTipo(Type_1.DataType.DECIMAL);
+                    return (Number(valueIzq) % Number(valueDer));
+                }
+            }
+        }
         return null;
     }
 }
@@ -101,4 +111,5 @@ var tipoOp;
     tipoOp[tipoOp["RESTA"] = 1] = "RESTA";
     tipoOp[tipoOp["DIVISION"] = 2] = "DIVISION";
     tipoOp[tipoOp["MULTIPLICACION"] = 3] = "MULTIPLICACION";
+    tipoOp[tipoOp["MOD"] = 4] = "MOD";
 })(tipoOp || (exports.tipoOp = tipoOp = {}));

@@ -28,6 +28,7 @@ export default class Nativo extends Instruccion {
       //console.log(value);
       this.tipoDato = get(value, 'tipo', new Type(DataType.INDEFINIDO));
       return get(value, 'valor')
+      
     }
   }
 }

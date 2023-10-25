@@ -4,6 +4,7 @@ import tablaSimbolo from '../Symbol/SymbolTable';
 import Tipo, {DataType} from '../Symbol/Type';
 import SymbolTable from '../Symbol/SymbolTable';
 import ReturnIns from '../Expresions/ReturnIns';
+import { Console, table } from 'console';
 
 export default class If extends Instruccion {
     private operacionIf: Instruccion;
@@ -18,16 +19,19 @@ export default class If extends Instruccion {
         listaInsElse: Instruccion[] | undefined,
         linea: number, 
         columna: number
+        
     ){
         super(new Tipo(DataType.INDEFINIDO), linea, columna);
         this.operacionIf = operacion
         this.listaInstrucciones = listaInstrucciones
         this.listaElseIf = listaElseIf
         this.listaInsElse = listaInsElse
+
     }
 
     public interpretar(arbol: Arbol, tabla: tablaSimbolo) {
-        const condition = this.operacionIf.interpretar(arbol, tabla)
+        
+        const condition = this.operacionIf.interpretar(arbol,tabla)
         if((condition)){
             const tablaLocal = new SymbolTable(tabla)
             for(let i of this.listaInstrucciones){

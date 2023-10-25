@@ -7,6 +7,7 @@ class SymbolTable {
     }
     getValor(id) {
         let valor = this.tablaActual.get(id);
+        console.log("aqui deberia de recorrer");
         if (!valor) {
             let actual = this.getAnterior();
             while (actual && !valor) {

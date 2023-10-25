@@ -22,4 +22,5 @@ var DataType;
     DataType[DataType["VOID"] = 4] = "VOID";
     DataType[DataType["ID"] = 5] = "ID";
     DataType[DataType["INDEFINIDO"] = 6] = "INDEFINIDO";
+    DataType[DataType["DATE"] = 7] = "DATE";
 })(DataType || (exports.DataType = DataType = {}));

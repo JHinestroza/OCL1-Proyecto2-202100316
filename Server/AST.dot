@@ -1,0 +1,828 @@
+digraph "G" {
+  label = "ast";
+  "node0" [
+    label = "INIT";
+  ];
+  "node1" [
+    label = "Instrucciones";
+  ];
+  "node2" [
+    label = "Instrucciones";
+  ];
+  "node3" [
+    label = "Instrucciones";
+  ];
+  "node4" [
+    label = "Instrucciones";
+  ];
+  "node5" [
+    label = "Instrucciones";
+  ];
+  "node6" [
+    label = "Instrucciones";
+  ];
+  "node7" [
+    label = "Instrucciones";
+  ];
+  "node8" [
+    label = "Instrucciones";
+  ];
+  "node9" [
+    label = "Instrucciones";
+  ];
+  "node10" [
+    label = "Instrucciones";
+  ];
+  "node11" [
+    label = "Instrucciones";
+  ];
+  "node12" [
+    label = "Instrucciones";
+  ];
+  "node13" [
+    label = "Instrucciones";
+  ];
+  "node14" [
+    label = "Instrucciones";
+  ];
+  "node15" [
+    label = "Instrucciones";
+  ];
+  "node16" [
+    label = "Instrucciones";
+  ];
+  "node17" [
+    label = "Instrucciones";
+  ];
+  "node18" [
+    label = "Instrucciones";
+  ];
+  "node19" [
+    label = "Instrucciones";
+  ];
+  "node20" [
+    label = "Instrucciones";
+  ];
+  "node21" [
+    label = "Instrucciones";
+  ];
+  "node22" [
+    label = "INSTRUCCION";
+  ];
+  "node23" [
+    label = "Declaracion";
+  ];
+  "node24" [
+    label = "identificador";
+  ];
+  "node25" [
+    label = "DATATYPES";
+  ];
+  "node26" [
+    label = "INT";
+  ];
+  "node27" [
+    label = "INSTRUCCION";
+  ];
+  "node28" [
+    label = "Declaracion";
+  ];
+  "node29" [
+    label = "identificador";
+  ];
+  "node30" [
+    label = "DATATYPES";
+  ];
+  "node31" [
+    label = "INT";
+  ];
+  "node32" [
+    label = "INSTRUCCION";
+  ];
+  "node33" [
+    label = "Declaracion";
+  ];
+  "node34" [
+    label = "identificador";
+  ];
+  "node35" [
+    label = "DATATYPES";
+  ];
+  "node36" [
+    label = "VARCHAR";
+  ];
+  "node37" [
+    label = "INSTRUCCION";
+  ];
+  "node38" [
+    label = "SIMPLEIF";
+  ];
+  "node39" [
+    label = "IF";
+  ];
+  "node40" [
+    label = "ENCAPSULADO";
+  ];
+  "node41" [
+    label = "BEGIN";
+  ];
+  "node42" [
+    label = "END";
+  ];
+  "node43" [
+    label = "INSTRUCCION";
+  ];
+  "node44" [
+    label = "SIMPLEIF";
+  ];
+  "node45" [
+    label = "IF";
+  ];
+  "node46" [
+    label = "ENCAPSULADO";
+  ];
+  "node47" [
+    label = "BEGIN";
+  ];
+  "node48" [
+    label = "END";
+  ];
+  "node49" [
+    label = "INSTRUCCION";
+  ];
+  "node50" [
+    label = "IFELSE";
+  ];
+  "node51" [
+    label = "Instrucciones";
+  ];
+  "node52" [
+    label = "INSTRUCCION";
+  ];
+  "node53" [
+    label = "IMPRIMIR";
+  ];
+  "node54" [
+    label = "PRINT";
+  ];
+  "node55" [
+    label = "IMPRIMIBLE";
+  ];
+  "node56" [
+    label = "EXPRESION";
+  ];
+  "node57" [
+    label = "APOSTROFE";
+  ];
+  "node58" [
+    label = "INSTRUCCION";
+  ];
+  "node59" [
+    label = "IMPRIMIR";
+  ];
+  "node60" [
+    label = "PRINT";
+  ];
+  "node61" [
+    label = "IMPRIMIBLE";
+  ];
+  "node62" [
+    label = "EXPRESION";
+  ];
+  "node63" [
+    label = "APOSTROFE";
+  ];
+  "node64" [
+    label = "INSTRUCCION";
+  ];
+  "node65" [
+    label = "IMPRIMIR";
+  ];
+  "node66" [
+    label = "PRINT";
+  ];
+  "node67" [
+    label = "IMPRIMIBLE";
+  ];
+  "node68" [
+    label = "EXPRESION";
+  ];
+  "node69" [
+    label = "@resultadoTalent";
+  ];
+  "node70" [
+    label = "INSTRUCCION";
+  ];
+  "node71" [
+    label = "IMPRIMIR";
+  ];
+  "node72" [
+    label = "PRINT";
+  ];
+  "node73" [
+    label = "IMPRIMIBLE";
+  ];
+  "node74" [
+    label = "EXPRESION";
+  ];
+  "node75" [
+    label = "APOSTROFE";
+  ];
+  "node76" [
+    label = "INSTRUCCION";
+  ];
+  "node77" [
+    label = "IMPRIMIR";
+  ];
+  "node78" [
+    label = "PRINT";
+  ];
+  "node79" [
+    label = "IMPRIMIBLE";
+  ];
+  "node80" [
+    label = "EXPRESION";
+  ];
+  "node81" [
+    label = "@resultadoTalent";
+  ];
+  "node82" [
+    label = "INSTRUCCION";
+  ];
+  "node83" [
+    label = "Declaracion";
+  ];
+  "node84" [
+    label = "identificador";
+  ];
+  "node85" [
+    label = "DATATYPES";
+  ];
+  "node86" [
+    label = "INT";
+  ];
+  "node87" [
+    label = "INSTRUCCION";
+  ];
+  "node88" [
+    label = "Declaracion";
+  ];
+  "node89" [
+    label = "identificador";
+  ];
+  "node90" [
+    label = "DATATYPES";
+  ];
+  "node91" [
+    label = "INT";
+  ];
+  "node92" [
+    label = "INSTRUCCION";
+  ];
+  "node93" [
+    label = "WHILE";
+  ];
+  "node94" [
+    label = "WHILE";
+  ];
+  "node95" [
+    label = "EXPRESION";
+  ];
+  "node96" [
+    label = "ENCAPSULADO";
+  ];
+  "node97" [
+    label = "BEGIN";
+  ];
+  "node98" [
+    label = "END";
+  ];
+  "node99" [
+    label = "INSTRUCCION";
+  ];
+  "node100" [
+    label = "FNATIVOS";
+  ];
+  "node101" [
+    label = "SELECT";
+  ];
+  "node102" [
+    label = "LOWER";
+  ];
+  "node103" [
+    label = "ENTRADA";
+  ];
+  "node104" [
+    label = "CADENA";
+  ];
+  "node105" [
+    label = "INSTRUCCION";
+  ];
+  "node106" [
+    label = "ASIGNACION";
+  ];
+  "node107" [
+    label = "SELECT";
+  ];
+  "node108" [
+    label = "UPPER";
+  ];
+  "node109" [
+    label = "ENTRADA";
+  ];
+  "node110" [
+    label = "CADENA";
+  ];
+  "node111" [
+    label = "INSTRUCCION";
+  ];
+  "node112" [
+    label = "FNATIVOS";
+  ];
+  "node113" [
+    label = "SELECT";
+  ];
+  "node114" [
+    label = "ROUND";
+  ];
+  "node115" [
+    label = "123.456789";
+  ];
+  "node116" [
+    label = ",";
+  ];
+  "node117" [
+    label = "2";
+  ];
+  "node118" [
+    label = "INSTRUCCION";
+  ];
+  "node119" [
+    label = "FNATIVOS";
+  ];
+  "node120" [
+    label = "SELECT";
+  ];
+  "node121" [
+    label = "LEN";
+  ];
+  "node122" [
+    label = "ENTRADA";
+  ];
+  "node123" [
+    label = "CADENA";
+  ];
+  "node124" [
+    label = "INSTRUCCION";
+  ];
+  "node125" [
+    label = "FNATIVOS";
+  ];
+  "node126" [
+    label = "SELECT";
+  ];
+  "node127" [
+    label = "TRUNCATE";
+  ];
+  "node128" [
+    label = "8.965";
+  ];
+  "node129" [
+    label = ",";
+  ];
+  "node130" [
+    label = "1";
+  ];
+  "node131" [
+    label = "INSTRUCCION";
+  ];
+  "node132" [
+    label = "FNATIVOS";
+  ];
+  "node133" [
+    label = "SELECT";
+  ];
+  "node134" [
+    label = "TYPEOF";
+  ];
+  "node135" [
+    label = "EXPRESION";
+  ];
+  "node136" [
+    label = "APOSTROFE";
+  ];
+  "node137" [
+    label = "EOF";
+  ];
+  "node0" -> "node1" [
+    label = "";
+  ];
+  "node1" -> "node2" [
+    label = "";
+  ];
+  "node2" -> "node3" [
+    label = "";
+  ];
+  "node3" -> "node4" [
+    label = "";
+  ];
+  "node4" -> "node5" [
+    label = "";
+  ];
+  "node5" -> "node6" [
+    label = "";
+  ];
+  "node6" -> "node7" [
+    label = "";
+  ];
+  "node7" -> "node8" [
+    label = "";
+  ];
+  "node8" -> "node9" [
+    label = "";
+  ];
+  "node9" -> "node10" [
+    label = "";
+  ];
+  "node10" -> "node11" [
+    label = "";
+  ];
+  "node11" -> "node12" [
+    label = "";
+  ];
+  "node12" -> "node13" [
+    label = "";
+  ];
+  "node13" -> "node14" [
+    label = "";
+  ];
+  "node14" -> "node15" [
+    label = "";
+  ];
+  "node15" -> "node16" [
+    label = "";
+  ];
+  "node16" -> "node17" [
+    label = "";
+  ];
+  "node17" -> "node18" [
+    label = "";
+  ];
+  "node18" -> "node19" [
+    label = "";
+  ];
+  "node19" -> "node20" [
+    label = "";
+  ];
+  "node20" -> "node21" [
+    label = "";
+  ];
+  "node21" -> "node22" [
+    label = "";
+  ];
+  "node22" -> "node23" [
+    label = "";
+  ];
+  "node23" -> "node24" [
+    label = "";
+  ];
+  "node23" -> "node25" [
+    label = "";
+  ];
+  "node25" -> "node26" [
+    label = "";
+  ];
+  "node20" -> "node27" [
+    label = "";
+  ];
+  "node27" -> "node28" [
+    label = "";
+  ];
+  "node28" -> "node29" [
+    label = "";
+  ];
+  "node28" -> "node30" [
+    label = "";
+  ];
+  "node30" -> "node31" [
+    label = "";
+  ];
+  "node19" -> "node32" [
+    label = "";
+  ];
+  "node32" -> "node33" [
+    label = "";
+  ];
+  "node33" -> "node34" [
+    label = "";
+  ];
+  "node33" -> "node35" [
+    label = "";
+  ];
+  "node35" -> "node36" [
+    label = "";
+  ];
+  "node18" -> "node37" [
+    label = "";
+  ];
+  "node37" -> "node38" [
+    label = "";
+  ];
+  "node38" -> "node39" [
+    label = "";
+  ];
+  "node38" -> "node40" [
+    label = "";
+  ];
+  "node40" -> "node41" [
+    label = "";
+  ];
+  "node40" -> "node42" [
+    label = "";
+  ];
+  "node17" -> "node43" [
+    label = "";
+  ];
+  "node43" -> "node44" [
+    label = "";
+  ];
+  "node44" -> "node45" [
+    label = "";
+  ];
+  "node44" -> "node46" [
+    label = "";
+  ];
+  "node46" -> "node47" [
+    label = "";
+  ];
+  "node46" -> "node48" [
+    label = "";
+  ];
+  "node16" -> "node49" [
+    label = "";
+  ];
+  "node49" -> "node50" [
+    label = "";
+  ];
+  "node50" -> "node51" [
+    label = "";
+  ];
+  "node51" -> "node52" [
+    label = "";
+  ];
+  "node52" -> "node53" [
+    label = "";
+  ];
+  "node53" -> "node54" [
+    label = "";
+  ];
+  "node53" -> "node55" [
+    label = "";
+  ];
+  "node55" -> "node56" [
+    label = "";
+  ];
+  "node56" -> "node57" [
+    label = "";
+  ];
+  "node15" -> "node58" [
+    label = "";
+  ];
+  "node58" -> "node59" [
+    label = "";
+  ];
+  "node59" -> "node60" [
+    label = "";
+  ];
+  "node59" -> "node61" [
+    label = "";
+  ];
+  "node61" -> "node62" [
+    label = "";
+  ];
+  "node62" -> "node63" [
+    label = "";
+  ];
+  "node14" -> "node64" [
+    label = "";
+  ];
+  "node64" -> "node65" [
+    label = "";
+  ];
+  "node65" -> "node66" [
+    label = "";
+  ];
+  "node65" -> "node67" [
+    label = "";
+  ];
+  "node67" -> "node68" [
+    label = "";
+  ];
+  "node68" -> "node69" [
+    label = "";
+  ];
+  "node13" -> "node70" [
+    label = "";
+  ];
+  "node70" -> "node71" [
+    label = "";
+  ];
+  "node71" -> "node72" [
+    label = "";
+  ];
+  "node71" -> "node73" [
+    label = "";
+  ];
+  "node73" -> "node74" [
+    label = "";
+  ];
+  "node74" -> "node75" [
+    label = "";
+  ];
+  "node12" -> "node76" [
+    label = "";
+  ];
+  "node76" -> "node77" [
+    label = "";
+  ];
+  "node77" -> "node78" [
+    label = "";
+  ];
+  "node77" -> "node79" [
+    label = "";
+  ];
+  "node79" -> "node80" [
+    label = "";
+  ];
+  "node80" -> "node81" [
+    label = "";
+  ];
+  "node11" -> "node82" [
+    label = "";
+  ];
+  "node82" -> "node83" [
+    label = "";
+  ];
+  "node83" -> "node84" [
+    label = "";
+  ];
+  "node83" -> "node85" [
+    label = "";
+  ];
+  "node85" -> "node86" [
+    label = "";
+  ];
+  "node10" -> "node87" [
+    label = "";
+  ];
+  "node87" -> "node88" [
+    label = "";
+  ];
+  "node88" -> "node89" [
+    label = "";
+  ];
+  "node88" -> "node90" [
+    label = "";
+  ];
+  "node90" -> "node91" [
+    label = "";
+  ];
+  "node9" -> "node92" [
+    label = "";
+  ];
+  "node92" -> "node93" [
+    label = "";
+  ];
+  "node93" -> "node94" [
+    label = "";
+  ];
+  "node93" -> "node95" [
+    label = "";
+  ];
+  "node93" -> "node96" [
+    label = "";
+  ];
+  "node96" -> "node97" [
+    label = "";
+  ];
+  "node96" -> "node98" [
+    label = "";
+  ];
+  "node8" -> "node99" [
+    label = "";
+  ];
+  "node99" -> "node100" [
+    label = "";
+  ];
+  "node100" -> "node101" [
+    label = "";
+  ];
+  "node100" -> "node102" [
+    label = "";
+  ];
+  "node100" -> "node103" [
+    label = "";
+  ];
+  "node103" -> "node104" [
+    label = "";
+  ];
+  "node7" -> "node105" [
+    label = "";
+  ];
+  "node105" -> "node106" [
+    label = "";
+  ];
+  "node106" -> "node107" [
+    label = "";
+  ];
+  "node106" -> "node108" [
+    label = "";
+  ];
+  "node106" -> "node109" [
+    label = "";
+  ];
+  "node109" -> "node110" [
+    label = "";
+  ];
+  "node6" -> "node111" [
+    label = "";
+  ];
+  "node111" -> "node112" [
+    label = "";
+  ];
+  "node112" -> "node113" [
+    label = "";
+  ];
+  "node112" -> "node114" [
+    label = "";
+  ];
+  "node112" -> "node115" [
+    label = "";
+  ];
+  "node112" -> "node116" [
+    label = "";
+  ];
+  "node112" -> "node117" [
+    label = "";
+  ];
+  "node5" -> "node118" [
+    label = "";
+  ];
+  "node118" -> "node119" [
+    label = "";
+  ];
+  "node119" -> "node120" [
+    label = "";
+  ];
+  "node119" -> "node121" [
+    label = "";
+  ];
+  "node119" -> "node122" [
+    label = "";
+  ];
+  "node122" -> "node123" [
+    label = "";
+  ];
+  "node4" -> "node124" [
+    label = "";
+  ];
+  "node124" -> "node125" [
+    label = "";
+  ];
+  "node125" -> "node126" [
+    label = "";
+  ];
+  "node125" -> "node127" [
+    label = "";
+  ];
+  "node125" -> "node128" [
+    label = "";
+  ];
+  "node125" -> "node129" [
+    label = "";
+  ];
+  "node125" -> "node130" [
+    label = "";
+  ];
+  "node3" -> "node131" [
+    label = "";
+  ];
+  "node131" -> "node132" [
+    label = "";
+  ];
+  "node132" -> "node133" [
+    label = "";
+  ];
+  "node132" -> "node134" [
+    label = "";
+  ];
+  "node132" -> "node135" [
+    label = "";
+  ];
+  "node135" -> "node136" [
+    label = "";
+  ];
+  "node0" -> "node137" [
+    label = "";
+  ];
+}

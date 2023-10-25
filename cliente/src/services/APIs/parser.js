@@ -11,7 +11,7 @@ const instance = axios.create(
 )
 
 export const parse = async (value) => {
-    const { data } = await instance.post("/parser", { peticion: value })
+    const { data } = await instance.post("/parser", { peticion: value})
     return data
 }
 

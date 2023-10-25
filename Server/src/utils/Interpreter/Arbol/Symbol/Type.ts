@@ -19,5 +19,6 @@ export enum DataType {
     DECIMAL,
     VOID,
     ID,
-    INDEFINIDO
+    INDEFINIDO,
+    DATE
 }
