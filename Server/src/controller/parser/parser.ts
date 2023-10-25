@@ -13,7 +13,6 @@ export const parser = (req: Request & unknown, res: Response): void => {
     listaErrores = new Array<Errores>();
     let parser = require('../../utils/Interpreter/analizador');
     const { peticion } = req.body;
-
     try { 
       const returnThree = parser.parse(peticion)
       let ast = new Three(returnThree);
@@ -22,19 +21,20 @@ export const parser = (req: Request & unknown, res: Response): void => {
       for (let i of ast.getinstrucciones()) {
         if (i instanceof Errores) {
           listaErrores.push(i);
+          
+          
           ast.actualizaConsola((<Errores>i).returnError());
         }
         //console.log(i)
-        
         var resultador = i instanceof Instruccion ? i.interpretar(ast, tabla) : new Errores("ERROR SEMANTICO", "no se puede ejecutar la instruccion", 0, 0);
         if (resultador instanceof Errores) {
           listaErrores.push(resultador);
+          console.log(resultador);
           ast.actualizaConsola((<Errores>resultador).returnError());
         }        
       }      
       
       const arbolGrafo = ast.getTree("ast");
-      //console.log(arbolGrafo)
       
       res.json({ consola: ast.getconsola(), grafo: arbolGrafo, errores: listaErrores, simbolos: [] });
     } catch (err) {

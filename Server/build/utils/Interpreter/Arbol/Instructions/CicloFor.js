@@ -41,8 +41,8 @@ class CicloFor extends Instruccion_1.Instruccion {
         const tablaLocal = new SymbolTable_1.default(tabla);
         let valueIzq = Number(this.Ran1.interpretar(arbol, tabla));
         let valueDer = Number(this.Ran2.interpretar(arbol, tabla));
-        console.log("este es el rango  " + valueIzq);
-        console.log("este es el rango  " + valueDer);
+        //console.log("este es el rango  " + valueIzq )
+        //console.log("este es el rango  " + valueDer )
         if (valueIzq < valueDer) {
             while (valueIzq != valueDer) {
                 const instructionsToExec = (0, cloneDeep_1.default)(this.listaInstrucciones);

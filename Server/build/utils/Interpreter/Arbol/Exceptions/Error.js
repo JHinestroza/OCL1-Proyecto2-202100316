@@ -18,6 +18,7 @@ class Error {
         this.desc = desc;
         this.fila = fila;
         this.columna = columna;
+        //console.log("he almacenado un tipo de error" + tipo)
     }
     returnError() {
         return ('Se obtuvo: ' +

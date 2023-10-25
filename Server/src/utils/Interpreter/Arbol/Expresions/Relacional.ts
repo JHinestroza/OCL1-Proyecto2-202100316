@@ -24,16 +24,16 @@ export default class Relacional extends Instruccion {
         if(validTypesOperations.includes(this.operacionIzq.tipoDato.getTipo())
             && validTypesOperations.includes(this.operacionDer.tipoDato.getTipo())) {
             if(this.tipo===tipoOp.MAYOR){      
-                console.log("entre en mayor " + valueIzq+"  "+valueDer)  
+                //console.log("entre en mayor " + valueIzq+"  "+valueDer)  
                 this.tipoDato = new Tipo(DataType.BOOLEAN);
                 return valueIzq > valueDer;
             }else if(this.tipo===tipoOp.MENOR){        
                 this.tipoDato = new Tipo(DataType.BOOLEAN);
-                console.log("entre en menor " + valueIzq+"  "+valueDer)
+                //console.log("entre en menor " + valueIzq+"  "+valueDer)
                 return valueIzq < valueDer;
             }else if(this.tipo===tipoOp.MENOR_IGUAL){        
                 this.tipoDato = new Tipo(DataType.BOOLEAN);
-                console.log("entre en menor o igual"+ valueIzq+"  "+valueDer)
+                //console.log("entre en menor o igual"+ valueIzq+"  "+valueDer)
                 return valueIzq <= valueDer;
             }else if(this.tipo===tipoOp.MAYOR_IGUAL){        
                 this.tipoDato = new Tipo(DataType.BOOLEAN);

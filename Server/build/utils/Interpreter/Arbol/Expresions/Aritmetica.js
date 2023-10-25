@@ -40,7 +40,7 @@ class Aritmetico extends Instruccion_1.Instruccion {
             if (this.operacionIzq.tipoDato.getTipo() == Type_1.DataType.DECIMAL) {
                 if (this.operacionDer.tipoDato.getTipo() == Type_1.DataType.DECIMAL) {
                     this.tipoDato.setTipo(Type_1.DataType.DECIMAL);
-                    console.log((valueIzq) + (valueDer));
+                    //console.log((valueIzq) + (valueDer))
                     return (Number(valueIzq) + Number(valueDer));
                 }
                 else if (this.operacionDer.tipoDato.getTipo() == Type_1.DataType.CADENA) {
@@ -62,8 +62,8 @@ class Aritmetico extends Instruccion_1.Instruccion {
         else if (this.tipo === tipoOp.RESTA) {
             let valueIzq = this.operacionIzq.interpretar(arbol, tabla);
             let valueDer = this.operacionDer.interpretar(arbol, tabla);
-            console.log("este es el valor izquierdo" + valueIzq);
-            console.log("este es el valor derecho" + valueDer);
+            //console.log("este es el valor izquierdo" + valueIzq);
+            //console.log("este es el valor derecho" + valueDer);
             if (this.operacionIzq.tipoDato.getTipo() === Type_1.DataType.DECIMAL) {
                 if (this.operacionDer.tipoDato.getTipo() === Type_1.DataType.DECIMAL) {
                     this.tipoDato.setTipo(Type_1.DataType.DECIMAL);

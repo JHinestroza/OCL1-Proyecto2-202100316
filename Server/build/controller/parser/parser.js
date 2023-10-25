@@ -28,11 +28,11 @@ const parser = (req, res) => {
             var resultador = i instanceof Instruccion_1.Instruccion ? i.interpretar(ast, tabla) : new Error_1.default("ERROR SEMANTICO", "no se puede ejecutar la instruccion", 0, 0);
             if (resultador instanceof Error_1.default) {
                 exports.listaErrores.push(resultador);
+                console.log(resultador);
                 ast.actualizaConsola(resultador.returnError());
             }
         }
         const arbolGrafo = ast.getTree("ast");
-        //console.log(arbolGrafo)
         res.json({ consola: ast.getconsola(), grafo: arbolGrafo, errores: exports.listaErrores, simbolos: [] });
     }
     catch (err) {

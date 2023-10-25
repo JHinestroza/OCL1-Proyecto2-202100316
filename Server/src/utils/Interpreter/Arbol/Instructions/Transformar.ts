@@ -21,12 +21,12 @@ export default class Transformar extends Instruccion {
         let valor = this.cadena.interpretar(arbol, tabla);
         if (this.transformado === cambio.LOWER) {
             valor = valor.toLowerCase()
-            console.log(valor)
+            //console.log(valor)
             arbol.actualizaConsola(valor + '');
         } 
         else if (this.transformado === cambio.UPPER) {
             valor = valor.toUpperCase()
-            console.log(valor)
+            //console.log(valor)
             arbol.actualizaConsola(valor + '');
 
         } else if (this.transformado === cambio.ROUND) {
@@ -37,7 +37,7 @@ export default class Transformar extends Instruccion {
 
         } else if (this.transformado === cambio.LEN) {
             valor = valor.length
-            console.log(valor)
+            //console.log(valor)
             arbol.actualizaConsola(valor + '');
 
         }else if (this.transformado === cambio.TypeOf) {

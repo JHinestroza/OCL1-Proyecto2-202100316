@@ -28,7 +28,7 @@ export default class Logica extends Instruccion {
                 return valueIzq || valueDer;
             } else if(this.tipo===tipoOp.AND){      
                 this.tipoDato = new Tipo(DataType.BOOLEAN);  
-                console.log("entre en AND "+valueIzq+"  "+valueDer)
+                //console.log("entre en AND "+valueIzq+"  "+valueDer)
                 return valueIzq && valueDer;
             } else if(this.tipo===tipoOp.NOT){      
                 this.tipoDato = new Tipo(DataType.BOOLEAN);  

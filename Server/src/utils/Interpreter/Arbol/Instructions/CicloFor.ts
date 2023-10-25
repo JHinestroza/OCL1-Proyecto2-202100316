@@ -26,8 +26,8 @@ export default class CicloFor extends Instruccion {
         const tablaLocal = new SymbolTable(tabla)
         let valueIzq = Number(this.Ran1.interpretar(arbol, tabla));
         let valueDer = Number(this.Ran2.interpretar(arbol, tabla));
-        console.log("este es el rango  " + valueIzq )
-        console.log("este es el rango  " + valueDer )
+        //console.log("este es el rango  " + valueIzq )
+        //console.log("este es el rango  " + valueDer )
         if (valueIzq < valueDer){
             while( valueIzq != valueDer){   
                 const instructionsToExec = cloneDeep(this.listaInstrucciones)    

@@ -126,7 +126,8 @@
 
 
 <<EOF>>                     return 'EOF';
-.                           return 'INVALID'
+.                           { //console.error('Este es un error léxico: ' + yytext + ', en la linea: ' + yylloc.first_line + ', en la columna: ' + yylloc.first_column);
+                            controller.listaErrores.push(new errores.default('ERROR LEXICO',yytext,yylloc.first_line, yylloc.first_column));} 
 
 /lex
 
@@ -212,9 +213,13 @@ INSTRUCCION :
             nodeInstruction: (new Nodo("INSTRUCCION")).generateProduction([$1.nodeInstruction]) 
         };
     }
-    | CREATE_TABLE      {}
-    | INVALID               {controller.listaErrores.push(new errores.default('ERROR LEXICO',$1,@1.first_line,@1.first_column));}
-    | error  PTCOMA         {controller.listaErrores.push(new errores.default(`ERROR SINTACTICO`,"Se esperaba token",@1.first_line,@1.first_column));}
+    | CREATE_TABLE{
+        $$={
+            retorno: $1.retorno, 
+            nodeInstruction: (new Nodo("INSTRUCCION")).generateProduction([$1.nodeInstruction]) 
+        };
+    }
+    | error PTCOMA         {controller.listaErrores.push(new errores.default(`ERROR SINTACTICO`,"Se esperaba token",@1.first_line,@1.first_column));}
 ;
 /* IMPRIMIR */
 
@@ -508,7 +513,13 @@ DATATYPES:
 
 /* CREATE TABLE*/
 CREATE_TABLE:
-    CREATE TABLE PTCOMA {}
+    CREATE TABLE APOSTROFE PTCOMA {
+		//console.log('pase en imprimir  '+$2)
+        $$= {
+            retorno: new impresion.default( new nativo.default(new Tipo.default(Tipo.DataType.CADENA),$3, @1.first_line, @1.first_column),@1.first_line,@1.first_column),
+            //nodeInstruction: (new Nodo('IMPRIMIR')).generateProduction([$1, $2.nodeInstruction,])
+        }
+    }
 ;
 
 /* UPDATE TABLE*/

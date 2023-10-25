@@ -38,7 +38,7 @@ class Imprimir extends Instruccion_1.Instruccion {
         let valor = this.expresion.interpretar(arbol, tabla);
         if (valor instanceof Error_1.default)
             return valor;
-        console.log(valor);
+        //console.log(valor)
         arbol.actualizaConsola(valor + '');
     }
 }

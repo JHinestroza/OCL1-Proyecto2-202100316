@@ -11,7 +11,7 @@ export default class SymbolTable {
 
   public getValor(id: String): any{
     let valor = this.tablaActual.get(id);
-    console.log("aqui deberia de recorrer")
+    //console.log("aqui deberia de recorrer")
     if(!valor) {
       let actual: SymbolTable = this.getAnterior();
       while(actual && !valor){

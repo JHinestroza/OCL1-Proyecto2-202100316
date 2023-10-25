@@ -45,7 +45,7 @@ class Logica extends Instruccion_1.Instruccion {
             }
             else if (this.tipo === tipoOp.AND) {
                 this.tipoDato = new Type_1.default(Type_1.DataType.BOOLEAN);
-                console.log("entre en AND " + valueIzq + "  " + valueDer);
+                //console.log("entre en AND "+valueIzq+"  "+valueDer)
                 return valueIzq && valueDer;
             }
             else if (this.tipo === tipoOp.NOT) {

@@ -64,352 +64,352 @@ digraph "G" {
     label = "Instrucciones";
   ];
   "node21" [
-    label = "Instrucciones";
+    label = "INSTRUCCION";
   ];
   "node22" [
-    label = "INSTRUCCION";
+    label = "Declaracion";
   ];
   "node23" [
-    label = "Declaracion";
+    label = "identificador";
   ];
   "node24" [
-    label = "identificador";
+    label = "DATATYPES";
   ];
   "node25" [
-    label = "DATATYPES";
+    label = "INT";
   ];
   "node26" [
-    label = "INT";
+    label = "INSTRUCCION";
   ];
   "node27" [
-    label = "INSTRUCCION";
+    label = "Declaracion";
   ];
   "node28" [
-    label = "Declaracion";
+    label = "identificador";
   ];
   "node29" [
-    label = "identificador";
+    label = "DATATYPES";
   ];
   "node30" [
-    label = "DATATYPES";
+    label = "INT";
   ];
   "node31" [
-    label = "INT";
+    label = "INSTRUCCION";
   ];
   "node32" [
-    label = "INSTRUCCION";
+    label = "Declaracion";
   ];
   "node33" [
-    label = "Declaracion";
+    label = "identificador";
   ];
   "node34" [
-    label = "identificador";
+    label = "DATATYPES";
   ];
   "node35" [
-    label = "DATATYPES";
-  ];
-  "node36" [
     label = "VARCHAR";
   ];
-  "node37" [
+  "node36" [
     label = "INSTRUCCION";
+  ];
+  "node37" [
+    label = "SIMPLEIF";
   ];
   "node38" [
-    label = "SIMPLEIF";
+    label = "IF";
   ];
   "node39" [
-    label = "IF";
+    label = "ENCAPSULADO";
   ];
   "node40" [
-    label = "ENCAPSULADO";
+    label = "BEGIN";
   ];
   "node41" [
-    label = "BEGIN";
+    label = "END";
   ];
   "node42" [
-    label = "END";
+    label = "INSTRUCCION";
   ];
   "node43" [
-    label = "INSTRUCCION";
-  ];
-  "node44" [
     label = "SIMPLEIF";
   ];
-  "node45" [
+  "node44" [
     label = "IF";
   ];
-  "node46" [
+  "node45" [
     label = "ENCAPSULADO";
   ];
-  "node47" [
+  "node46" [
     label = "BEGIN";
   ];
-  "node48" [
+  "node47" [
     label = "END";
   ];
-  "node49" [
+  "node48" [
     label = "INSTRUCCION";
   ];
-  "node50" [
+  "node49" [
     label = "IFELSE";
   ];
-  "node51" [
+  "node50" [
     label = "Instrucciones";
   ];
-  "node52" [
+  "node51" [
     label = "INSTRUCCION";
+  ];
+  "node52" [
+    label = "IMPRIMIR";
   ];
   "node53" [
-    label = "IMPRIMIR";
+    label = "PRINT";
   ];
   "node54" [
-    label = "PRINT";
+    label = "IMPRIMIBLE";
   ];
   "node55" [
-    label = "IMPRIMIBLE";
+    label = "EXPRESION";
   ];
   "node56" [
-    label = "EXPRESION";
+    label = "APOSTROFE";
   ];
   "node57" [
-    label = "APOSTROFE";
+    label = "INSTRUCCION";
   ];
   "node58" [
-    label = "INSTRUCCION";
+    label = "IMPRIMIR";
   ];
   "node59" [
-    label = "IMPRIMIR";
+    label = "PRINT";
   ];
   "node60" [
-    label = "PRINT";
+    label = "IMPRIMIBLE";
   ];
   "node61" [
-    label = "IMPRIMIBLE";
+    label = "EXPRESION";
   ];
   "node62" [
-    label = "EXPRESION";
+    label = "APOSTROFE";
   ];
   "node63" [
-    label = "APOSTROFE";
+    label = "INSTRUCCION";
   ];
   "node64" [
-    label = "INSTRUCCION";
+    label = "IMPRIMIR";
   ];
   "node65" [
-    label = "IMPRIMIR";
+    label = "PRINT";
   ];
   "node66" [
-    label = "PRINT";
+    label = "IMPRIMIBLE";
   ];
   "node67" [
-    label = "IMPRIMIBLE";
+    label = "EXPRESION";
   ];
   "node68" [
-    label = "EXPRESION";
+    label = "@resultadoTalent";
   ];
   "node69" [
-    label = "@resultadoTalent";
+    label = "INSTRUCCION";
   ];
   "node70" [
-    label = "INSTRUCCION";
+    label = "IMPRIMIR";
   ];
   "node71" [
-    label = "IMPRIMIR";
+    label = "PRINT";
   ];
   "node72" [
-    label = "PRINT";
+    label = "IMPRIMIBLE";
   ];
   "node73" [
-    label = "IMPRIMIBLE";
+    label = "EXPRESION";
   ];
   "node74" [
-    label = "EXPRESION";
-  ];
-  "node75" [
     label = "APOSTROFE";
   ];
-  "node76" [
+  "node75" [
     label = "INSTRUCCION";
   ];
-  "node77" [
+  "node76" [
     label = "IMPRIMIR";
   ];
-  "node78" [
+  "node77" [
     label = "PRINT";
   ];
-  "node79" [
+  "node78" [
     label = "IMPRIMIBLE";
   ];
-  "node80" [
+  "node79" [
     label = "EXPRESION";
   ];
-  "node81" [
+  "node80" [
     label = "@resultadoTalent";
   ];
-  "node82" [
+  "node81" [
     label = "INSTRUCCION";
+  ];
+  "node82" [
+    label = "Declaracion";
   ];
   "node83" [
-    label = "Declaracion";
+    label = "identificador";
   ];
   "node84" [
-    label = "identificador";
+    label = "DATATYPES";
   ];
   "node85" [
-    label = "DATATYPES";
+    label = "INT";
   ];
   "node86" [
-    label = "INT";
+    label = "INSTRUCCION";
   ];
   "node87" [
-    label = "INSTRUCCION";
-  ];
-  "node88" [
     label = "Declaracion";
   ];
-  "node89" [
+  "node88" [
     label = "identificador";
   ];
-  "node90" [
+  "node89" [
     label = "DATATYPES";
   ];
-  "node91" [
+  "node90" [
     label = "INT";
   ];
-  "node92" [
+  "node91" [
     label = "INSTRUCCION";
+  ];
+  "node92" [
+    label = "WHILE";
   ];
   "node93" [
     label = "WHILE";
   ];
   "node94" [
-    label = "WHILE";
+    label = "EXPRESION";
   ];
   "node95" [
-    label = "EXPRESION";
-  ];
-  "node96" [
     label = "ENCAPSULADO";
   ];
-  "node97" [
+  "node96" [
     label = "BEGIN";
   ];
-  "node98" [
+  "node97" [
     label = "END";
   ];
-  "node99" [
+  "node98" [
     label = "INSTRUCCION";
+  ];
+  "node99" [
+    label = "FNATIVOS";
   ];
   "node100" [
-    label = "FNATIVOS";
+    label = "SELECT";
   ];
   "node101" [
-    label = "SELECT";
-  ];
-  "node102" [
     label = "LOWER";
   ];
-  "node103" [
+  "node102" [
     label = "ENTRADA";
+  ];
+  "node103" [
+    label = "CADENA";
   ];
   "node104" [
-    label = "CADENA";
+    label = "INSTRUCCION";
   ];
   "node105" [
-    label = "INSTRUCCION";
-  ];
-  "node106" [
     label = "ASIGNACION";
   ];
-  "node107" [
+  "node106" [
     label = "SELECT";
   ];
-  "node108" [
+  "node107" [
     label = "UPPER";
   ];
-  "node109" [
+  "node108" [
     label = "ENTRADA";
+  ];
+  "node109" [
+    label = "CADENA";
   ];
   "node110" [
-    label = "CADENA";
+    label = "INSTRUCCION";
   ];
   "node111" [
-    label = "INSTRUCCION";
+    label = "FNATIVOS";
   ];
   "node112" [
-    label = "FNATIVOS";
+    label = "SELECT";
   ];
   "node113" [
-    label = "SELECT";
-  ];
-  "node114" [
     label = "ROUND";
   ];
-  "node115" [
+  "node114" [
     label = "123.456789";
   ];
-  "node116" [
+  "node115" [
     label = ",";
   ];
-  "node117" [
+  "node116" [
     label = "2";
   ];
-  "node118" [
+  "node117" [
     label = "INSTRUCCION";
+  ];
+  "node118" [
+    label = "FNATIVOS";
   ];
   "node119" [
-    label = "FNATIVOS";
+    label = "SELECT";
   ];
   "node120" [
-    label = "SELECT";
-  ];
-  "node121" [
     label = "LEN";
   ];
-  "node122" [
+  "node121" [
     label = "ENTRADA";
   ];
-  "node123" [
+  "node122" [
     label = "CADENA";
   ];
-  "node124" [
+  "node123" [
     label = "INSTRUCCION";
+  ];
+  "node124" [
+    label = "FNATIVOS";
   ];
   "node125" [
-    label = "FNATIVOS";
+    label = "SELECT";
   ];
   "node126" [
-    label = "SELECT";
-  ];
-  "node127" [
     label = "TRUNCATE";
   ];
-  "node128" [
+  "node127" [
     label = "8.965";
   ];
-  "node129" [
+  "node128" [
     label = ",";
   ];
-  "node130" [
+  "node129" [
     label = "1";
   ];
-  "node131" [
+  "node130" [
     label = "INSTRUCCION";
   ];
-  "node132" [
+  "node131" [
     label = "FNATIVOS";
   ];
-  "node133" [
+  "node132" [
     label = "SELECT";
   ];
-  "node134" [
+  "node133" [
     label = "TYPEOF";
   ];
-  "node135" [
+  "node134" [
     label = "EXPRESION";
   ];
-  "node136" [
+  "node135" [
     label = "APOSTROFE";
+  ];
+  "node136" [
+    label = "INSTRUCCION";
   ];
   "node137" [
     label = "EOF";
@@ -483,82 +483,82 @@ digraph "G" {
   "node22" -> "node23" [
     label = "";
   ];
-  "node23" -> "node24" [
+  "node22" -> "node24" [
     label = "";
   ];
-  "node23" -> "node25" [
+  "node24" -> "node25" [
     label = "";
   ];
-  "node25" -> "node26" [
+  "node19" -> "node26" [
     label = "";
   ];
-  "node20" -> "node27" [
+  "node26" -> "node27" [
     label = "";
   ];
   "node27" -> "node28" [
     label = "";
   ];
-  "node28" -> "node29" [
+  "node27" -> "node29" [
     label = "";
   ];
-  "node28" -> "node30" [
+  "node29" -> "node30" [
     label = "";
   ];
-  "node30" -> "node31" [
+  "node18" -> "node31" [
     label = "";
   ];
-  "node19" -> "node32" [
+  "node31" -> "node32" [
     label = "";
   ];
   "node32" -> "node33" [
     label = "";
   ];
-  "node33" -> "node34" [
+  "node32" -> "node34" [
     label = "";
   ];
-  "node33" -> "node35" [
+  "node34" -> "node35" [
     label = "";
   ];
-  "node35" -> "node36" [
+  "node17" -> "node36" [
     label = "";
   ];
-  "node18" -> "node37" [
+  "node36" -> "node37" [
     label = "";
   ];
   "node37" -> "node38" [
     label = "";
   ];
-  "node38" -> "node39" [
+  "node37" -> "node39" [
     label = "";
   ];
-  "node38" -> "node40" [
+  "node39" -> "node40" [
     label = "";
   ];
-  "node40" -> "node41" [
+  "node39" -> "node41" [
     label = "";
   ];
-  "node40" -> "node42" [
+  "node16" -> "node42" [
     label = "";
   ];
-  "node17" -> "node43" [
+  "node42" -> "node43" [
     label = "";
   ];
   "node43" -> "node44" [
     label = "";
   ];
-  "node44" -> "node45" [
+  "node43" -> "node45" [
     label = "";
   ];
-  "node44" -> "node46" [
+  "node45" -> "node46" [
     label = "";
   ];
-  "node46" -> "node47" [
+  "node45" -> "node47" [
     label = "";
   ];
-  "node46" -> "node48" [
+  "node15" -> "node48" [
     label = "";
   ];
-  "node16" -> "node49" [
+  "node48" -> "node49" [
     label = "";
   ];
   "node49" -> "node50" [
@@ -573,253 +573,253 @@ digraph "G" {
   "node52" -> "node53" [
     label = "";
   ];
-  "node53" -> "node54" [
+  "node52" -> "node54" [
     label = "";
   ];
-  "node53" -> "node55" [
+  "node54" -> "node55" [
     label = "";
   ];
   "node55" -> "node56" [
     label = "";
   ];
-  "node56" -> "node57" [
+  "node14" -> "node57" [
     label = "";
   ];
-  "node15" -> "node58" [
+  "node57" -> "node58" [
     label = "";
   ];
   "node58" -> "node59" [
     label = "";
   ];
-  "node59" -> "node60" [
+  "node58" -> "node60" [
     label = "";
   ];
-  "node59" -> "node61" [
+  "node60" -> "node61" [
     label = "";
   ];
   "node61" -> "node62" [
     label = "";
   ];
-  "node62" -> "node63" [
+  "node13" -> "node63" [
     label = "";
   ];
-  "node14" -> "node64" [
+  "node63" -> "node64" [
     label = "";
   ];
   "node64" -> "node65" [
     label = "";
   ];
-  "node65" -> "node66" [
+  "node64" -> "node66" [
     label = "";
   ];
-  "node65" -> "node67" [
+  "node66" -> "node67" [
     label = "";
   ];
   "node67" -> "node68" [
     label = "";
   ];
-  "node68" -> "node69" [
+  "node12" -> "node69" [
     label = "";
   ];
-  "node13" -> "node70" [
+  "node69" -> "node70" [
     label = "";
   ];
   "node70" -> "node71" [
     label = "";
   ];
-  "node71" -> "node72" [
+  "node70" -> "node72" [
     label = "";
   ];
-  "node71" -> "node73" [
+  "node72" -> "node73" [
     label = "";
   ];
   "node73" -> "node74" [
     label = "";
   ];
-  "node74" -> "node75" [
+  "node11" -> "node75" [
     label = "";
   ];
-  "node12" -> "node76" [
+  "node75" -> "node76" [
     label = "";
   ];
   "node76" -> "node77" [
     label = "";
   ];
-  "node77" -> "node78" [
+  "node76" -> "node78" [
     label = "";
   ];
-  "node77" -> "node79" [
+  "node78" -> "node79" [
     label = "";
   ];
   "node79" -> "node80" [
     label = "";
   ];
-  "node80" -> "node81" [
+  "node10" -> "node81" [
     label = "";
   ];
-  "node11" -> "node82" [
+  "node81" -> "node82" [
     label = "";
   ];
   "node82" -> "node83" [
     label = "";
   ];
-  "node83" -> "node84" [
+  "node82" -> "node84" [
     label = "";
   ];
-  "node83" -> "node85" [
+  "node84" -> "node85" [
     label = "";
   ];
-  "node85" -> "node86" [
+  "node9" -> "node86" [
     label = "";
   ];
-  "node10" -> "node87" [
+  "node86" -> "node87" [
     label = "";
   ];
   "node87" -> "node88" [
     label = "";
   ];
-  "node88" -> "node89" [
+  "node87" -> "node89" [
     label = "";
   ];
-  "node88" -> "node90" [
+  "node89" -> "node90" [
     label = "";
   ];
-  "node90" -> "node91" [
+  "node8" -> "node91" [
     label = "";
   ];
-  "node9" -> "node92" [
+  "node91" -> "node92" [
     label = "";
   ];
   "node92" -> "node93" [
     label = "";
   ];
-  "node93" -> "node94" [
+  "node92" -> "node94" [
     label = "";
   ];
-  "node93" -> "node95" [
+  "node92" -> "node95" [
     label = "";
   ];
-  "node93" -> "node96" [
+  "node95" -> "node96" [
     label = "";
   ];
-  "node96" -> "node97" [
+  "node95" -> "node97" [
     label = "";
   ];
-  "node96" -> "node98" [
+  "node7" -> "node98" [
     label = "";
   ];
-  "node8" -> "node99" [
+  "node98" -> "node99" [
     label = "";
   ];
   "node99" -> "node100" [
     label = "";
   ];
-  "node100" -> "node101" [
+  "node99" -> "node101" [
     label = "";
   ];
-  "node100" -> "node102" [
+  "node99" -> "node102" [
     label = "";
   ];
-  "node100" -> "node103" [
+  "node102" -> "node103" [
     label = "";
   ];
-  "node103" -> "node104" [
+  "node6" -> "node104" [
     label = "";
   ];
-  "node7" -> "node105" [
+  "node104" -> "node105" [
     label = "";
   ];
   "node105" -> "node106" [
     label = "";
   ];
-  "node106" -> "node107" [
+  "node105" -> "node107" [
     label = "";
   ];
-  "node106" -> "node108" [
+  "node105" -> "node108" [
     label = "";
   ];
-  "node106" -> "node109" [
+  "node108" -> "node109" [
     label = "";
   ];
-  "node109" -> "node110" [
+  "node5" -> "node110" [
     label = "";
   ];
-  "node6" -> "node111" [
+  "node110" -> "node111" [
     label = "";
   ];
   "node111" -> "node112" [
     label = "";
   ];
-  "node112" -> "node113" [
+  "node111" -> "node113" [
     label = "";
   ];
-  "node112" -> "node114" [
+  "node111" -> "node114" [
     label = "";
   ];
-  "node112" -> "node115" [
+  "node111" -> "node115" [
     label = "";
   ];
-  "node112" -> "node116" [
+  "node111" -> "node116" [
     label = "";
   ];
-  "node112" -> "node117" [
+  "node4" -> "node117" [
     label = "";
   ];
-  "node5" -> "node118" [
+  "node117" -> "node118" [
     label = "";
   ];
   "node118" -> "node119" [
     label = "";
   ];
-  "node119" -> "node120" [
+  "node118" -> "node120" [
     label = "";
   ];
-  "node119" -> "node121" [
+  "node118" -> "node121" [
     label = "";
   ];
-  "node119" -> "node122" [
+  "node121" -> "node122" [
     label = "";
   ];
-  "node122" -> "node123" [
+  "node3" -> "node123" [
     label = "";
   ];
-  "node4" -> "node124" [
+  "node123" -> "node124" [
     label = "";
   ];
   "node124" -> "node125" [
     label = "";
   ];
-  "node125" -> "node126" [
+  "node124" -> "node126" [
     label = "";
   ];
-  "node125" -> "node127" [
+  "node124" -> "node127" [
     label = "";
   ];
-  "node125" -> "node128" [
+  "node124" -> "node128" [
     label = "";
   ];
-  "node125" -> "node129" [
+  "node124" -> "node129" [
     label = "";
   ];
-  "node125" -> "node130" [
+  "node2" -> "node130" [
     label = "";
   ];
-  "node3" -> "node131" [
+  "node130" -> "node131" [
     label = "";
   ];
   "node131" -> "node132" [
     label = "";
   ];
-  "node132" -> "node133" [
+  "node131" -> "node133" [
     label = "";
   ];
-  "node132" -> "node134" [
+  "node131" -> "node134" [
     label = "";
   ];
-  "node132" -> "node135" [
+  "node134" -> "node135" [
     label = "";
   ];
-  "node135" -> "node136" [
+  "node1" -> "node136" [
     label = "";
   ];
   "node0" -> "node137" [

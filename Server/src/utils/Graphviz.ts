@@ -9,18 +9,7 @@ export class CDigraph extends Digraph {
     });
   }
 
-  public async generate(){
-    const render = CliRenderer({ outputFile: "./AST.pdf", format: "pdf" });
-    await (async () => {
-        try {
-          await render(
-            toDot(this)
-          );
-        } catch (error) {
-          console.log(error);
-        }
-    })();    
-  }
+
 }
 export class CNode extends Node {
   constructor(id: number, label: string) {
